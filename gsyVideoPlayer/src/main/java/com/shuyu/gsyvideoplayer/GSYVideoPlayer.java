@@ -510,7 +510,7 @@ public abstract class GSYVideoPlayer extends GSYBaseVideoPlayer implements View.
         mCurrentTimeTextView.setVisibility(INVISIBLE);
         mTotalTimeTextView.setVisibility(INVISIBLE);
         mTextureViewContainer.setOnClickListener(null);
-        mSmallClose.setVisibility(VISIBLE);
+        mSmallClose.setVisibility(GONE);
         mSmallClose.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
