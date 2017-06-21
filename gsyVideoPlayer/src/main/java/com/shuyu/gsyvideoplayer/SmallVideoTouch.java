@@ -38,6 +38,7 @@ public class SmallVideoTouch implements View.OnTouchListener {
                 break;
             case MotionEvent.ACTION_UP:
                 if (Math.abs(mDownY - Y) < 5 && Math.abs(mDownX - X) < 5) {
+                    mGsyBaseVideoPlayer.startWindowFullscreen(mGsyBaseVideoPlayer.getContext(), true, true);
                     return false;
                 } else {
                     return true;
